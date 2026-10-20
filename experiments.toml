@@ -1,0 +1,34 @@
+# One table per heat-stress experiment: a tray of Arabidopsis photographed before the
+# heat shock, right after it and on several recovery days.
+#
+# first_plant / first_mutant  plants are numbered by tray position; from first_mutant on they are SWAP A
+# controls                    plants kept at normal temperature, left out of the recovery analysis
+# min_baseline_area           drop plants smaller than this (cm2) before the stress: seedlings that never established
+# outliers                    plants dropped after checking their photos (segmentation errors, sudden jumps in size)
+# max_day                     last recovery day used for the index
+
+[cm10]
+first_plant = 277
+first_mutant = 283
+max_day = 3
+
+[cm11]
+first_plant = 289
+first_mutant = 301
+controls = [290, 295, 302, 304]
+outliers = [292, 303, 305, 306, 312]
+max_day = 14
+
+[cm13]
+first_plant = 337
+first_mutant = 349
+min_baseline_area = 1.0
+outliers = [340, 344]
+max_day = 7
+
+[cm14]
+first_plant = 361
+first_mutant = 373
+controls = [364, 384]
+min_baseline_area = 1.0
+outliers = [361, 362, 366, 373, 383]
